@@ -22,7 +22,7 @@ conan_cmake_run(REQUIRES nlohmann_json/3.9.1
 
 
 add_executable(StateMe main.cpp)
-
+#Alternative name: statum??
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)

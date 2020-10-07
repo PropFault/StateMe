@@ -330,9 +330,25 @@ utility
 vector
 -
 
+C:/Users/Biggest/Documents/StateMe/jsonserializeable.h
+nlohmann/json.hpp
+-
+
 C:/Users/Biggest/Documents/StateMe/main.cpp
 iostream
 -
 nlohmann/json.hpp
 -
+state.h
+C:/Users/Biggest/Documents/StateMe/state.h
+
+C:/Users/Biggest/Documents/StateMe/state.h
+exception
+-
+string
+-
+nlohmann/json.hpp
+-
+jsonserializeable.h
+C:/Users/Biggest/Documents/StateMe/jsonserializeable.h
 
