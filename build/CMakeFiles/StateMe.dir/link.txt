@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\StateMe.dir/objects.a
-D:\MinGW\mingw32\bin\ar.exe cr CMakeFiles\StateMe.dir/objects.a @CMakeFiles\StateMe.dir\objects1.rsp
-D:\MinGW\mingw32\bin\g++.exe    -g        -Wl,--whole-archive CMakeFiles\StateMe.dir/objects.a -Wl,--no-whole-archive  -o bin\StateMe.exe -Wl,--out-implib,lib\libStateMe.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\StateMe.dir\linklibs.rsp

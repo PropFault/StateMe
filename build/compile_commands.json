@@ -1,7 +1,0 @@
-[
-{
-  "directory": "C:/Users/Biggest/Documents/StateMe/build",
-  "command": "D:\\MinGW\\mingw32\\bin\\g++.exe   @CMakeFiles/StateMe.dir/includes_CXX.rsp    -g    -DJSON_USE_IMPLICIT_CONVERSIONS=1 -o CMakeFiles\\StateMe.dir\\main.cpp.obj -c C:\\Users\\Biggest\\Documents\\StateMe\\main.cpp",
-  "file": "C:/Users/Biggest/Documents/StateMe/main.cpp"
-}
-]

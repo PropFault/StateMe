@@ -7,8 +7,5 @@ int main(int, char**) {
     j["Damn"]["Bruh"] = 20;
 
     std::cout << "Hello, world!\n";
-    stateme::State mate("Haha");
-
-    j["State"] = mate;
-    std::cout << j << std::endl;
+        
 }

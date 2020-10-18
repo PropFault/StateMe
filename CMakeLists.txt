@@ -21,7 +21,7 @@ conan_cmake_run(REQUIRES nlohmann_json/3.9.1
                 BUILD missing)
 
 
-add_executable(StateMe main.cpp)
+add_executable(StateMe main.cpp state.cpp branch.cpp condition.cpp graph.cpp register.cpp)
 #Alternative name: statum??
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

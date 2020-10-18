@@ -1,9 +1,0 @@
-[generators]
-cmake
-
-[requires]
-nlohmann_json/3.9.1
-
-[options]
-
-[imports]

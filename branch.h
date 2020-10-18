@@ -1,29 +1,21 @@
 #pragma once
 #include "condition.h"
 #include "state.h"
+#include "serializeable.h"
+
 namespace stateme{
-    class Branch{
+    class Branch : public Serializeable{
     private:
         const Condition *condition;
         State *state;
         int priority;
     public:
-        Branch(Condition *condition, State *state, int prioritym)
-        :condition(condition), state(state), priority(priority){}
+        Branch(Condition *condition, State *state, int prioritym);
 
-        const Condition *getCondition()const{
-            return condition;
-        }
-        void setCondition(const Condition *condition){
-            this->condition = condition;
-        }
+        const Condition *getCondition()const;
+        void setCondition(const Condition *condition);
 
-        State* getState()const{
-            return state;
-        }
-
-        void setState(State* state){
-            this->state = state;
-        }
-    }
+        State* getState()const;
+        void setState(State* state);        
+    }; 
 }
