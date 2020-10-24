@@ -1,17 +1,12 @@
 #pragma once
 #include <string>
-#include "serializeable.h"
+#include "IDOS/ido.h"
 
 namespace stateme{
-    class Condition:public Serializeable{
-    private:
-        const std::string name;
+    class Condition: public idos::IDO{
     public:
-        Condition(const std::string& name)
-        :name(name){}
-        const std::string &getName();
-
+        Condition(const std::string& conditionType);
         virtual bool evaluate() const = 0;
-        virtual Condition* clone() = 0;
+        virtual ~Condition();
     };
 }

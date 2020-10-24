@@ -1,9 +1,8 @@
 #pragma once
 #include <exception>
 #include <string>
-#include "serializeable.h"
 namespace stateme{
-    class State : public Serializeable{
+    class State{
     private:
         std::string name;
     public:

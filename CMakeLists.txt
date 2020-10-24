@@ -26,3 +26,8 @@ add_executable(StateMe main.cpp state.cpp branch.cpp condition.cpp graph.cpp reg
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
+
+set(CMAKE_LIBRARY_PATH, ${CMAKE_LIBRARY_PATH}+;"./lib")
+include_directories("./lib/include/")
+find_library(IDOS libIDOS.a)
+target_link_libraries(StateMe IDOS)

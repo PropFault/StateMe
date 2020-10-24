@@ -1,21 +1,31 @@
 #pragma once
 #include "condition.h"
 #include "state.h"
-#include "serializeable.h"
-
+#include "IDOS/ido.h"
 namespace stateme{
-    class Branch : public Serializeable{
+    class Branch:public idos::IDO{
     private:
-        const Condition *condition;
-        State *state;
+        idos::IDO::ID condition;
+        idos::IDO::ID state;
         int priority;
     public:
-        Branch(Condition *condition, State *state, int prioritym);
+        static const std::string PACK_CONDITION;
+        static const std::string PACK_STATE;
+        static const std::string PACK_PRIORITY;
 
-        const Condition *getCondition()const;
-        void setCondition(const Condition *condition);
+        Branch(int priority);
+        Branch(const idos::IDO::ID &condition, const idos::IDO::ID &state, int prioritym);
+        
 
-        State* getState()const;
-        void setState(State* state);        
+        const idos::IDO::ID &getCondition()const;
+        void setCondition(const idos::IDO::ID &condition);
+
+        const idos::IDO::ID &getState()const;
+        void setState(const idos::IDO::ID &id);  
+
+        virtual idos::DataPack _pack() const override;
+        virtual void _unpack(const idos::DataPack &pack) override;
+    
+        virtual IDO *clone()override;
     }; 
 }

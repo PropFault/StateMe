@@ -1,6 +1,11 @@
 #include "condition.h"
 using namespace stateme;
+using namespace idos;
+Condition::Condition(const std::string& conditionType)
+:IDO(conditionType){}
 
-const std::string &Condition::getName(){
-    return name;
+Condition::~Condition(){
+
 }
+
+        

@@ -1,5 +1,4 @@
 #pragma once
-#include "serializeable.h"
 #include "state.h"
 #include "condition.h"
 #include <unordered_map>
